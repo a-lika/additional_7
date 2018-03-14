@@ -57,7 +57,7 @@ var arrLen = arr.length;
 for (var p = 0; p < variables[i][j].length; p++) {
 for (var n = 0; n < arrLen; n++) {
 if(matrix[i][j]==0){
- matrix[i][j]=variables[i][j][p];
+ matrix[i][j]=variables[i][j][1];
  break;
 }
 }
