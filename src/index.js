@@ -1,7 +1,7 @@
 module.exports = function solveSudoku(matrix) {
   // your solution
-  var variables = []; var arr = [];
- //var result = [], steps = 0;
+ var variables = []; 
+ var arr = [];
  var solved = true;
 while(solved){
 solved = false;
@@ -10,10 +10,8 @@ for (var i = 0; i < 9; i++) {
 	 variables[i]=[];
 	 if(matrix[i][j]==0){
 	 variables[i][j]=[matrix[i][j]];
-	// variables[i][j].pop('0');
 	 variables[i][j]=[1,2,3,4,5,6,7,8,9];
 	 set_var(i,j);
-
 }
 }
 }
